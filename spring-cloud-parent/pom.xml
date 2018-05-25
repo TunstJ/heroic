@@ -9,12 +9,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- ä¿è¯ç¼–è¯‘java8çš„ç‰ˆæœ¬ -->
+		<!-- ±£Ö¤±àÒëjava8µÄ°æ±¾ -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<!-- Lombok æ˜¯ä¸€ç§ Javaâ„¢ å®žç”¨å·¥å…·ï¼Œå¯ç”¨æ¥å¸®åŠ©å¼€å‘äººå‘˜æ¶ˆé™¤ Java çš„å†—é•¿ï¼Œ å°¤å…¶æ˜¯å¯¹äºŽç®€å•çš„ Java å¯¹è±¡ï¼ˆPOJOï¼‰ã€‚å®ƒé€šè¿‡æ³¨è§£å®žçŽ°è¿™ä¸€ç›®çš„ã€‚ -->
+		<!-- Lombok ÊÇÒ»ÖÖ Java? ÊµÓÃ¹¤¾ß£¬¿ÉÓÃÀ´°ïÖú¿ª·¢ÈËÔ±Ïû³ý Java µÄÈß³¤£¬ ÓÈÆäÊÇ¶ÔÓÚ¼òµ¥µÄ Java ¶ÔÏó£¨POJO£©¡£ËüÍ¨¹ý×¢½âÊµÏÖÕâÒ»Ä¿µÄ¡£ -->
 		<lombok.version>1.16.18</lombok.version>
 	</properties>
 
@@ -31,9 +31,9 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>Dalston.SR1</version>
-				<!-- å°†æ‰€æœ‰çš„jaråŒ…æ‰“åŒ…æˆä¸€ä¸ªpomï¼Œä¾èµ–äº†pomï¼Œå³å¯ä»¥ä¸‹è½½ä¸‹æ¥æ‰€æœ‰ä¾èµ–çš„jaråŒ… -->
+				<!-- ½«ËùÓÐµÄjar°ü´ò°ü³ÉÒ»¸öpom£¬ÒÀÀµÁËpom£¬¼´¿ÉÒÔÏÂÔØÏÂÀ´ËùÓÐÒÀÀµµÄjar°ü -->
 				<type>pom</type>
-				<!-- è¡¨ç¤ºä»ŽSpringCloud å®˜æ–¹æ ‡å‡†é¡¹ç›®ä¸­å¯¼å…¥å¯¹åº”çš„dependencyé…ç½® -->
+				<!-- ±íÊ¾´ÓSpringCloud ¹Ù·½±ê×¼ÏîÄ¿ÖÐµ¼Èë¶ÔÓ¦µÄdependencyÅäÖÃ -->
 				<scope>import</scope>
 			</dependency>
 			 <dependency>
@@ -45,9 +45,9 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>1.5.9.RELEASE</version>
-				<!-- å°†æ‰€æœ‰çš„jaråŒ…æ‰“åŒ…æˆä¸€ä¸ªpomï¼Œä¾èµ–äº†pomï¼Œå³å¯ä»¥ä¸‹è½½ä¸‹æ¥æ‰€æœ‰ä¾èµ–çš„jaråŒ… -->
+				<!-- ½«ËùÓÐµÄjar°ü´ò°ü³ÉÒ»¸öpom£¬ÒÀÀµÁËpom£¬¼´¿ÉÒÔÏÂÔØÏÂÀ´ËùÓÐÒÀÀµµÄjar°ü -->
 				<type>pom</type>
-				<!-- è¡¨ç¤ºä»ŽSpringCloud å®˜æ–¹æ ‡å‡†é¡¹ç›®ä¸­å¯¼å…¥å¯¹åº”çš„dependencyé…ç½® -->
+				<!-- ±íÊ¾´ÓSpringCloud ¹Ù·½±ê×¼ÏîÄ¿ÖÐµ¼Èë¶ÔÓ¦µÄdependencyÅäÖÃ -->
 				<scope>import</scope>
 			</dependency>
 
@@ -88,13 +88,13 @@
 				<version>${log4j.version}</version>
 			</dependency>
 
-			<!-- å¼•å…¥swagger ä¾èµ– -->
+			<!-- ÒýÈëswagger ÒÀÀµ -->
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger2</artifactId>
 				<version>2.8.0</version>
 			</dependency>
-			<!-- å¼•å…¥swagger ui æ–¹ä¾¿é¡µé¢æµ‹è¯• -->
+			<!-- ÒýÈëswagger ui ·½±ãÒ³Ãæ²âÊÔ -->
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger-ui</artifactId>
@@ -129,5 +129,6 @@
 	<modules>
 		<module>spring-cloud-api</module>
 		<module>spring-cloud-config</module>
-	</modules>
+    <module>spring-cloud-eureka-A</module>
+  </modules>
 </project>
