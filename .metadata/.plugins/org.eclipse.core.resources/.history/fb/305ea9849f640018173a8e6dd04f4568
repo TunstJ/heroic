@@ -1,0 +1,16 @@
+package com.svr.bean;
+
+
+import java.io.Serializable;
+
+
+public class SysUserRole implements Serializable{
+  
+    private Integer id;
+
+    private Integer userId;
+
+    private Integer roleId;
+
+   
+}

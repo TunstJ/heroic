@@ -1,0 +1,38 @@
+package com.svr.service;
+
+
+
+import java.util.List;
+
+import com.svr.bean.Bxdept;
+import com.svr.vo.BxdeptVo;
+
+public interface BxdeptService {
+
+	// 根据条件查询2.0 部门信息
+	List<Bxdept> queryDept(BxdeptVo deptvo);
+
+	// 根据部门id 修改部门的定制游的状态 备注不为空修改备注
+	void updateDeptType(BxdeptVo deptvo);
+
+	// 根据部门id查询2.0 部门信息
+	List<Bxdept> queryDeptById(BxdeptVo deptvo);
+
+	// 向表中添加部门信息
+	Integer insetDept(Bxdept bxdep);
+
+	// 清楚部门扩展信息
+	int eliminateDept(Integer deptId, String time);
+
+	// 根据部门类型id查询2.0部门信息
+	List<Bxdept> queryBxDept(BxUsersVo bxUsersVo);
+
+	// 根据时间段查出所有部门信息
+	List<Bxdept> queryTime(String time);
+
+	// 根据 部门id 查询2.0的部门信息
+	Bxdept queryBxdeptByTuserId(Integer tdeptid);
+
+	// 根据tuser的部门id和vo中的部门类型判断 2.0部门是否开通
+	Bxdept queryOpen(BxUsersVo bxUsersVo);
+}

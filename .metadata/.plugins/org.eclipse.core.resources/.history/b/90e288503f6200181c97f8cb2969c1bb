@@ -1,0 +1,5 @@
+package com.svr.config;
+@Configuration
+public class WebConfig {
+
+}

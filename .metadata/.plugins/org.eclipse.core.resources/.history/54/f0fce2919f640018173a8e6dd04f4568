@@ -1,0 +1,60 @@
+package com.svr.vo;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+
+import com.svr.bean.Bxdept;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+/**
+ * 2018年2月24日 部门vo
+ */
+@AllArgsConstructor     // 全参构造器
+@NoArgsConstructor      // 无参构造器
+@Data                   // 自定生成getter和setter...
+@Accessors(chain=true)  // 可以链式调用自动生成的模板方法
+public class BxdeptVo implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private Integer currlimig = 0; // 当前数量
+
+	private Integer branches = 10; // 条数 必传参数
+
+	private Integer page = 0; // 当前页数
+
+	private Integer limit = 10; // 当前条数
+
+	// 1.0用户id
+	private Integer t_userid;
+
+	// 用户表中状态设定人id
+	private Integer custom_id;
+
+	// 关键字
+	private String dept_name;
+
+	// 定制游业务类型
+	private Integer dept_type;
+
+	// 部门id
+	private Integer dept_id;
+
+	// 定制游部门状态
+	private Integer dept_active;
+
+	// 备注
+	private String remarks;
+
+	// 收款方式
+	private String rec_type;
+
+	private String expiration_date; // 时间
+
+	
+}

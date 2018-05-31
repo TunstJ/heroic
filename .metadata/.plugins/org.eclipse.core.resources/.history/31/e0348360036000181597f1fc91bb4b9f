@@ -1,0 +1,114 @@
+package com.svr.bean.dept;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+/**
+ * 2.0部门
+ *2018年2月25日
+ */
+public class Bxdept implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	private int Id;
+	
+	private int DeptId;
+	
+	private int DeptActive;
+	
+	private int CustomId;
+	
+	private Timestamp CustomTime;
+	
+	private int DeptType;
+	
+	private BigDecimal  CreditLine;
+	
+	private BigDecimal 	CreditAvailable;
+	
+	private String RecType;
+	
+	private String Remark;
+
+	public int getId() {
+		return Id;
+	}
+
+	public void setId(int id) {
+		Id = id;
+	}
+
+	public int getDeptId() {
+		return DeptId;
+	}
+
+	public void setDeptId(int deptId) {
+		DeptId = deptId;
+	}
+
+	public int getDeptActive() {
+		return DeptActive;
+	}
+
+	public void setDeptActive(int deptActive) {
+		DeptActive = deptActive;
+	}
+
+	public int getCustomId() {
+		return CustomId;
+	}
+
+	public void setCustomId(int customId) {
+		CustomId = customId;
+	}
+
+	public Timestamp getCustomTime() {
+		return CustomTime;
+	}
+
+	public void setCustomTime(Timestamp customTime) {
+		CustomTime = customTime;
+	}
+
+	public int getDeptType() {
+		return DeptType;
+	}
+
+	public void setDeptType(int deptType) {
+		DeptType = deptType;
+	}
+
+	public BigDecimal getCreditLine() {
+		return CreditLine;
+	}
+
+	public void setCreditLine(BigDecimal creditLine) {
+		CreditLine = creditLine;
+	}
+
+	public BigDecimal getCreditAvailable() {
+		return CreditAvailable;
+	}
+
+	public void setCreditAvailable(BigDecimal creditAvailable) {
+		CreditAvailable = creditAvailable;
+	}
+
+	public String getRecType() {
+		return RecType;
+	}
+
+	public void setRecType(String recType) {
+		RecType = recType;
+	}
+
+	public String getRemark() {
+		return Remark;
+	}
+
+	public void setRemark(String remark) {
+		Remark = remark;
+	}
+	
+}

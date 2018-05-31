@@ -1,0 +1,74 @@
+package com.svr.service.impl.dept;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+
+import com.alibaba.dubbo.config.annotation.Service;
+import com.svr.bean.dept.Bxdept;
+import com.svr.mapper.dept.BxdeptMapper;
+import com.svr.service.dept.BxdeptService;
+import com.svr.vo.dept.BxdeptVo;
+import com.svr.vo.user.BxUsersVo;
+
+@Service(version = "1.0.0")
+public class BxdeptServiceImpl implements BxdeptService {
+
+	@Autowired
+	private BxdeptMapper bxdeptMapper;
+	
+	// 根据条件查询2.0部门信息表 
+	@Override
+	public List<Bxdept> queryDept(BxdeptVo deptvo) {
+		return bxdeptMapper.queryDept(deptvo);
+	}
+
+	//根据部门id 修改部门的定制游的状态 备注不为空修改备注
+	@Override
+	public void updateDeptType(BxdeptVo deptvo) {
+		bxdeptMapper.updateDeptType(deptvo);
+	}
+	
+	//根据部门id查询2.0 部门信息
+	@Override
+	public List<Bxdept> queryDeptById(BxdeptVo deptvo) {
+		return bxdeptMapper.queryDeptById(deptvo);
+	}
+
+	//向表中添加部门信息
+	@Override
+	public Integer insetDept(Bxdept bxdep) {
+		 bxdeptMapper.insetDept(bxdep);
+		 return bxdep.getId();
+	}
+
+	//清除扩展部门信息  开启一个事务
+	@Override
+	public int eliminateDept(Integer deptId, String time) {
+		return bxdeptMapper.eliminateDept(deptId, time);
+	}
+
+	//根据部门类型id查询2.0部门信息
+	@Override
+	public List<Bxdept> queryBxDept(BxUsersVo bxUsersVo) {
+		return bxdeptMapper.queryBxDept(bxUsersVo);
+	}
+
+	//根据  部门id 查询2.0的部门信息
+	@Override
+	public Bxdept queryBxdeptByTuserId(Integer tdeptid) {
+		return bxdeptMapper.queryBxdeptByTuserId(tdeptid);
+	}
+
+	@Override
+	public List<Bxdept> queryTime(String time) {
+		return bxdeptMapper.queryTime(time);
+	}
+
+	//根据tuser的部门id和vo中的部门类型判断 2.0部门是否开通
+	@Override
+	public Bxdept queryOpen(BxUsersVo bxUsersVo) {
+		return bxdeptMapper.queryOpen(bxUsersVo);
+	}
+	
+}
