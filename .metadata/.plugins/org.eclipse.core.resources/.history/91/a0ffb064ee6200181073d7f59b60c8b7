@@ -1,0 +1,41 @@
+package com.yhxd.beauty.modular.system.controller;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import com.yhxd.beauty.modular.system.service.IDeptService;
+
+/**
+ * 部门控制器
+ *
+ * @author fengshuonan
+ * @Date 2017年2月17日20:27:22
+ */
+@Controller
+@RequestMapping("/dept")
+public class DeptController{
+
+    private String PREFIX = "/system/dept/";
+
+    @Autowired
+    private IDeptService deptService;
+
+    /**
+     * 跳转到部门管理首页
+     */
+    @RequestMapping("")
+    public String index() {
+        return PREFIX + "dept.html";
+    }
+
+    /**
+     * 跳转到添加部门
+     */
+    @RequestMapping("/dept_add")
+    public String deptAdd() {
+        return PREFIX + "dept_add.html";
+    }
+
+   
+}

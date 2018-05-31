@@ -1,0 +1,42 @@
+package com.svr.bean;
+
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Timestamp;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+/**
+ * 2.0部门
+ *2018年2月25日
+ */
+@AllArgsConstructor     // 全参构造器
+@NoArgsConstructor      // 无参构造器
+@Data                   // 自定生成getter和setter...
+@Accessors(chain=true)  // 可以链式调用自动生成的模板方法
+public class Bxdept implements Serializable{
+
+	private static final long serialVersionUID = 1L;
+	
+	private int Id;
+	
+	private int DeptId;
+	
+	private int DeptActive;
+	
+	private int CustomId;
+	
+	private Timestamp CustomTime;
+	
+	private int DeptType;
+	
+	private BigDecimal  CreditLine;
+	
+	private BigDecimal 	CreditAvailable;
+	
+	private String RecType;
+	
+	private String Remark;
+
+}

@@ -1,0 +1,8 @@
+package com.svr.config;
+
+/*
+ * shiro 配置
+ */
+public class ShiroConfig {
+
+}

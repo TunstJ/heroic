@@ -1,0 +1,15 @@
+package com.svr;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Dome {
+	@RequestMapping("/helloHtml") 
+	 public String helloHtml(Model model){ 
+		  model.addAttribute("hello", "from TemplateController.helloHtml");
+		
+	 return"index"; 
+	 } 
+}

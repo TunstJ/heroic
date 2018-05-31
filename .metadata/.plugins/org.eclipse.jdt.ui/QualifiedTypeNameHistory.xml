@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="org.apache.ibatis.annotations.Mapper"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+<fullyQualifiedTypeName name="io.swagger.models.Model"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
+<fullyQualifiedTypeName name="org.springframework.cache.annotation.CachingConfigurerSupport"/>
+<fullyQualifiedTypeName name="org.springframework.beans.PropertyAccessor"/>
+<fullyQualifiedTypeName name="org.springframework.expression.PropertyAccessor"/>
+<fullyQualifiedTypeName name="groovyjarjarasm.asm.commons.Method"/>
+<fullyQualifiedTypeName name="org.objectweb.asm.commons.Method"/>
+<fullyQualifiedTypeName name="javax.crypto.KeyGenerator"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
+<fullyQualifiedTypeName name="org.apache.shiro.cache.CacheManager"/>
+<fullyQualifiedTypeName name="tk.mybatis.mapper.common.Mapper"/>
+<fullyQualifiedTypeName name="org.apache.shiro.util.StringUtils"/>
+<fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
+<fullyQualifiedTypeName name="org.crazycake.shiro.RedisCacheManager"/>
+</qualifiedTypeNameHistroy>

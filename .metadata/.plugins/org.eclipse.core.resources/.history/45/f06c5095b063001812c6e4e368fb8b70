@@ -1,0 +1,44 @@
+package com.svr.config;
+
+import org.apache.shiro.cache.CacheManager;
+import org.apache.shiro.session.mgt.SessionManager;
+import org.apache.shiro.web.mgt.CookieRememberMeManager;
+import org.apache.shiro.web.mgt.DefaultWebSecurityManager;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Bean;
+
+/*
+ * shiro 配置
+ */
+public class ShiroConfig {
+		@Value("${spring.redis.host}")
+	    private String host;
+		
+	    @Value("${spring.redis.port}")
+	    private int port;
+	    
+	    @Value("${spring.redis.timeout}")
+	    private int timeout;
+	    
+	    
+	    /**
+	     * 项目自定义的Realm
+	     */
+	    @Bean
+	    public ShiroDbRealm shiroDbRealm() {
+	        return new ShiroDbRealm();
+	    }
+	    
+	    /**
+	     * 安全管理器
+	     */
+	    @Bean
+	    public DefaultWebSecurityManager securityManager(CookieRememberMeManager rememberMeManager, CacheManager cacheShiroManager, SessionManager sessionManager) {
+	        DefaultWebSecurityManager securityManager = new DefaultWebSecurityManager();
+	        securityManager.setRealm(this.shiroDbRealm());
+	        securityManager.setCacheManager(cacheShiroManager);
+	        securityManager.setRememberMeManager(rememberMeManager);
+	        securityManager.setSessionManager(sessionManager);
+	        return securityManager;
+	    }
+}

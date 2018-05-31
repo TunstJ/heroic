@@ -1,0 +1,14 @@
+package com.svr;
+
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class Dome {
+	  @GetMapping("/dept/save")
+
+	    public String save(Model model) {
+	        return "/index.html";
+	  }
+}

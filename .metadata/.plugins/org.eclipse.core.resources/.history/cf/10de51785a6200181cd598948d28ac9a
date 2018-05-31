@@ -1,0 +1,7 @@
+server:
+  port: 8001    # 端口设置 
+
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/view/     						#HTML页面地址

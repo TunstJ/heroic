@@ -1,0 +1,161 @@
+package com.svr.vo.dept;
+
+import java.io.Serializable;
+
+/**
+ * 2018年2月24日 部门vo
+ */
+public class BxdeptVo implements Serializable {
+
+	private static final long serialVersionUID = 1L;
+
+	private Integer currlimig = 0; // 当前数量
+
+	private Integer branches = 10; // 条数 必传参数
+
+	private Integer page = 0; // 当前页数
+
+	private Integer limit = 10; // 当前条数
+
+	public Integer getLimit() {
+		return limit;
+	}
+
+	public void setLimit(Integer limit) {
+		this.limit = limit;
+	}
+
+	// 用户令牌
+	private String user_token;
+
+	public Integer getPage() {
+		return page;
+	}
+
+	public void setPage(Integer page) {
+		this.page = page;
+	}
+
+	// 1.0用户id
+	private Integer t_userid;
+
+	// 用户表中状态设定人id
+	private Integer custom_id;
+
+	// 关键字
+	private String dept_name;
+
+	// 定制游业务类型
+	private Integer dept_type;
+
+	// 部门id
+	private Integer dept_id;
+
+	// 定制游部门状态
+	private Integer dept_active;
+
+	// 备注
+	private String remarks;
+
+	// 收款方式
+	private String rec_type;
+
+	private String expiration_date; // 时间
+
+	public String getExpiration_date() {
+		return expiration_date;
+	}
+
+	public void setExpiration_date(String expiration_date) {
+		this.expiration_date = expiration_date;
+	}
+
+	public Integer getCustom_id() {
+		return custom_id;
+	}
+
+	public void setCustom_id(Integer custom_id) {
+		this.custom_id = custom_id;
+	}
+
+	public Integer getT_userid() {
+		return t_userid;
+	}
+
+	public void setT_userid(Integer t_userid) {
+		this.t_userid = t_userid;
+	}
+
+	public Integer getDept_active() {
+		return dept_active;
+	}
+
+	public void setDept_active(Integer dept_active) {
+		this.dept_active = dept_active;
+	}
+
+	public Integer getCurrlimig() {
+		return currlimig;
+	}
+
+	public void setCurrlimig(Integer currlimig) {
+		this.currlimig = currlimig;
+	}
+
+	public Integer getBranches() {
+		return branches;
+	}
+
+	public void setBranches(Integer branches) {
+		this.branches = branches;
+	}
+
+	public String getUser_token() {
+		return user_token;
+	}
+
+	public void setUser_token(String user_token) {
+		this.user_token = user_token;
+	}
+
+	public String getDept_name() {
+		return dept_name;
+	}
+
+	public void setDept_name(String dept_name) {
+		this.dept_name = dept_name;
+	}
+
+	public Integer getDept_type() {
+		return dept_type;
+	}
+
+	public void setDept_type(Integer dept_type) {
+		this.dept_type = dept_type;
+	}
+
+	public Integer getDept_id() {
+		return dept_id;
+	}
+
+	public void setDept_id(Integer dept_id) {
+		this.dept_id = dept_id;
+	}
+
+	public String getRemarks() {
+		return remarks;
+	}
+
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+
+	public String getRec_type() {
+		return rec_type;
+	}
+
+	public void setRec_type(String rec_type) {
+		this.rec_type = rec_type;
+	}
+
+}

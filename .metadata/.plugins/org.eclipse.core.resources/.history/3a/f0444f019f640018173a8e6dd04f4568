@@ -1,0 +1,53 @@
+package com.svr.bean;
+
+
+import java.io.Serializable;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.experimental.Accessors;
+
+@AllArgsConstructor     // 全参构造器
+@NoArgsConstructor      // 无参构造器
+@Data                   // 自定生成getter和setter...
+@Accessors(chain=true)  // 可以链式调用自动生成的模板方法
+public class SysResources implements Serializable{
+
+    private Integer id;
+
+    /**
+     * 资源名称
+     */
+   
+    private String userName;
+
+    /**
+     * 资源url
+     */
+    
+    private String resUrl;
+
+    /**
+     * 资源类型   1:菜单    2：按钮
+     */
+ 
+    private Integer userType;
+
+    /**
+     * 父资源
+     */
+   
+    private Integer parentId;
+
+    /**
+     * 排序
+     */
+   
+    private Integer userSort;
+
+    /**
+     * @return id
+     */
+   
+}

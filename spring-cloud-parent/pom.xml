@@ -9,12 +9,12 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<!-- ±£Ö¤±àÒëjava8µÄ°æ±¾ -->
+		<!-- ï¿½ï¿½Ö¤ï¿½ï¿½ï¿½ï¿½java8ï¿½Ä°æ±¾ -->
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<junit.version>4.12</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<!-- Lombok ÊÇÒ»ÖÖ Java? ÊµÓÃ¹¤¾ß£¬¿ÉÓÃÀ´°ïÖú¿ª·¢ÈËÔ±Ïû³ý Java µÄÈß³¤£¬ ÓÈÆäÊÇ¶ÔÓÚ¼òµ¥µÄ Java ¶ÔÏó£¨POJO£©¡£ËüÍ¨¹ý×¢½âÊµÏÖÕâÒ»Ä¿µÄ¡£ -->
+		<!-- Lombok ï¿½ï¿½Ò»ï¿½ï¿½ Java? Êµï¿½Ã¹ï¿½ï¿½ß£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô±ï¿½ï¿½ï¿½ï¿½ Java ï¿½ï¿½ï¿½ß³ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ç¶ï¿½ï¿½Ú¼òµ¥µï¿½ Java ï¿½ï¿½ï¿½ï¿½POJOï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½×¢ï¿½ï¿½Êµï¿½ï¿½ï¿½ï¿½Ò»Ä¿ï¿½Ä¡ï¿½ -->
 		<lombok.version>1.16.18</lombok.version>
 	</properties>
 
@@ -31,9 +31,9 @@
 				<groupId>org.springframework.cloud</groupId>
 				<artifactId>spring-cloud-dependencies</artifactId>
 				<version>Dalston.SR1</version>
-				<!-- ½«ËùÓÐµÄjar°ü´ò°ü³ÉÒ»¸öpom£¬ÒÀÀµÁËpom£¬¼´¿ÉÒÔÏÂÔØÏÂÀ´ËùÓÐÒÀÀµµÄjar°ü -->
+				<!-- ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½pomï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pomï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jarï¿½ï¿½ -->
 				<type>pom</type>
-				<!-- ±íÊ¾´ÓSpringCloud ¹Ù·½±ê×¼ÏîÄ¿ÖÐµ¼Èë¶ÔÓ¦µÄdependencyÅäÖÃ -->
+				<!-- ï¿½ï¿½Ê¾ï¿½ï¿½SpringCloud ï¿½Ù·ï¿½ï¿½ï¿½×¼ï¿½ï¿½Ä¿ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½dependencyï¿½ï¿½ï¿½ï¿½ -->
 				<scope>import</scope>
 			</dependency>
 			 <dependency>
@@ -41,13 +41,26 @@
 		        <artifactId>lombok</artifactId>
 		        <version>${lombok.version}</version>
    			 </dependency>
+   		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+        </dependency>
+        
 			<dependency>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-dependencies</artifactId>
 				<version>1.5.9.RELEASE</version>
-				<!-- ½«ËùÓÐµÄjar°ü´ò°ü³ÉÒ»¸öpom£¬ÒÀÀµÁËpom£¬¼´¿ÉÒÔÏÂÔØÏÂÀ´ËùÓÐÒÀÀµµÄjar°ü -->
+				<!-- ï¿½ï¿½ï¿½ï¿½ï¿½Ðµï¿½jarï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½pomï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½pomï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½jarï¿½ï¿½ -->
 				<type>pom</type>
-				<!-- ±íÊ¾´ÓSpringCloud ¹Ù·½±ê×¼ÏîÄ¿ÖÐµ¼Èë¶ÔÓ¦µÄdependencyÅäÖÃ -->
+				<!-- ï¿½ï¿½Ê¾ï¿½ï¿½SpringCloud ï¿½Ù·ï¿½ï¿½ï¿½×¼ï¿½ï¿½Ä¿ï¿½Ðµï¿½ï¿½ï¿½ï¿½Ó¦ï¿½ï¿½dependencyï¿½ï¿½ï¿½ï¿½ -->
 				<scope>import</scope>
 			</dependency>
 
@@ -88,20 +101,20 @@
 				<version>${log4j.version}</version>
 			</dependency>
 
-			<!-- ÒýÈëswagger ÒÀÀµ -->
+			<!-- ï¿½ï¿½ï¿½ï¿½swagger ï¿½ï¿½ï¿½ï¿½ -->
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger2</artifactId>
 				<version>2.8.0</version>
 			</dependency>
-			<!-- ÒýÈëswagger ui ·½±ãÒ³Ãæ²âÊÔ -->
+			<!-- ï¿½ï¿½ï¿½ï¿½swagger ui ï¿½ï¿½ï¿½ï¿½Ò³ï¿½ï¿½ï¿½ï¿½ï¿½ -->
 			<dependency>
 				<groupId>io.springfox</groupId>
 				<artifactId>springfox-swagger-ui</artifactId>
 				<version>2.8.0</version>
 			</dependency>
 
-		</dependencies>
+ </dependencies>
 
 	</dependencyManagement>
 	
@@ -129,6 +142,7 @@
 	<modules>
 		<module>spring-cloud-api</module>
 		<module>spring-cloud-config</module>
-    <module>spring-cloud-eureka-A</module>
+    	<module>spring-cloud-eureka-A</module>
+    	<module>spring-cloud-provider</module>
   </modules>
 </project>

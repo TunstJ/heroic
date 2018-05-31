@@ -1,0 +1,46 @@
+package com.yhxd.beauty.modular.system.controller;
+
+
+import com.yhxd.beauty.core.common.annotion.BussinessLog;
+import com.yhxd.beauty.core.common.annotion.Permission;
+import com.yhxd.beauty.core.common.constant.Const;
+import com.yhxd.beauty.core.common.constant.dictmap.DictMap;
+import com.yhxd.beauty.core.common.constant.factory.ConstantFactory;
+import com.yhxd.beauty.core.common.exception.BizExceptionEnum;
+import com.yhxd.beauty.core.log.LogObjectHolder;
+import com.yhxd.beauty.modular.system.model.Dict;
+import com.yhxd.beauty.modular.system.service.IDictService;
+import com.yhxd.beauty.modular.system.warpper.DictWarpper;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+
+
+/**
+ * 字典控制器
+ *
+ * @author fengshuonan
+ * @Date 2017年4月26日 12:55:31
+ */
+@Controller
+@RequestMapping("/dict")
+public class DictController{
+
+    private String PREFIX = "/system/dict/";
+
+    /**
+     * 跳转到字典管理首页
+     */
+    @RequestMapping("")
+    public String index() {
+        return PREFIX + "dict.html";
+    }
+
+    /**
+     * 跳转到添加字典
+     */
+    @RequestMapping("/dict_add")
+    public String deptAdd() {
+        return PREFIX + "dict_add.html";
+    }
+
+}

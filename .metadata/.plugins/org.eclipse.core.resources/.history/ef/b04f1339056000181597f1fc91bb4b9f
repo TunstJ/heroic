@@ -1,0 +1,60 @@
+package com.svr.vo.user;
+
+import java.io.Serializable;
+
+/*
+ * BxUsersVo用来接受前端传过来的参数
+ * 
+ */
+public class BxUsersVo implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Integer currlimig = 0; // 当前数量
+
+	private Integer page = 0; // 分页时使用
+
+	private Integer limit = 10; // 分页时使用
+
+	private String user_token; // 员工令牌
+
+	private Integer user_id; // 员工id
+
+	private Integer deptid; // 部门id
+
+	private String expiration_date; // 时间
+
+	private Integer user_active; // 员工定制游业务状态 0=激活1=停用
+
+	private Integer custom_id; // 定制游状态设定人id
+
+	private String custom_time; // 定制游状态设定时间
+
+	private String user_name; // 员工姓名
+
+	private String password; // 员工密码
+
+	private Integer dept_type;
+
+	private Integer dept_id;
+
+	// 定制游状态设定人id
+	private Integer tuserid;
+
+	// 定制游部门名称
+	private String dept_name;
+	
+	//定制游员工备注
+	private String remarks;
+	
+	//业绩提成比例
+	private String ratio;
+	
+	//部门类型
+	private Integer user_type;
+
+
+}

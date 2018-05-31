@@ -1,0 +1,211 @@
+package com.svr.vo.user;
+
+import java.io.Serializable;
+
+/*
+ * BxUsersVo用来接受前端传过来的参数
+ * 
+ */
+public class BxUsersVo implements Serializable {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
+	private Integer currlimig = 0; // 当前数量
+
+	private Integer page = 0; // 分页时使用
+
+	private Integer limit = 10; // 分页时使用
+
+	private String user_token; // 员工令牌
+
+	private Integer user_id; // 员工id
+
+	private Integer deptid; // 部门id
+
+	private String expiration_date; // 时间
+
+	private Integer user_active; // 员工定制游业务状态 0=激活1=停用
+
+	private Integer custom_id; // 定制游状态设定人id
+
+	private String custom_time; // 定制游状态设定时间
+
+	private String user_name; // 员工姓名
+
+	private String password; // 员工密码
+
+	private Integer dept_type;
+
+	private Integer dept_id;
+
+	// 定制游状态设定人id
+	private Integer tuserid;
+
+	// 定制游部门名称
+	private String dept_name;
+	
+	//定制游员工备注
+	private String remarks;
+	
+	//业绩提成比例
+	private String ratio;
+	
+	//部门类型
+	private Integer user_type;
+
+	public Integer getCurrlimig() {
+		return currlimig;
+	}
+
+	public void setCurrlimig(Integer currlimig) {
+		this.currlimig = currlimig;
+	}
+
+	public String getDept_name() {
+		return dept_name;
+	}
+
+	public void setDept_name(String dept_name) {
+		this.dept_name = dept_name;
+	}
+
+	public Integer getTuserid() {
+		return tuserid;
+	}
+
+	public void setTuserid(Integer tuserid) {
+		this.tuserid = tuserid;
+	}
+
+	public Integer getDept_id() {
+		return dept_id;
+	}
+
+	public void setDept_id(Integer dept_id) {
+		this.dept_id = dept_id;
+	}
+
+	public Integer getPage() {
+		return page;
+	}
+
+	public void setPage(Integer page) {
+		this.page = page;
+	}
+
+	public Integer getLimit() {
+		return limit;
+	}
+
+	public void setLimit(Integer limit) {
+		this.limit = limit;
+	}
+
+	public String getUser_token() {
+		return user_token;
+	}
+
+	public void setUser_token(String user_token) {
+		this.user_token = user_token;
+	}
+
+	public Integer getUser_id() {
+		return user_id;
+	}
+
+	public void setUser_id(Integer user_id) {
+		this.user_id = user_id;
+	}
+
+	public Integer getDeptid() {
+		return deptid;
+	}
+
+	public void setDeptid(Integer deptid) {
+		this.deptid = deptid;
+	}
+
+	public String getExpiration_date() {
+		return expiration_date;
+	}
+
+	public void setExpiration_date(String expiration_date) {
+		this.expiration_date = expiration_date;
+	}
+
+	public Integer getUser_active() {
+		return user_active;
+	}
+
+	public void setUser_active(Integer user_active) {
+		this.user_active = user_active;
+	}
+
+	public Integer getCustom_id() {
+		return custom_id;
+	}
+
+	public void setCustom_id(Integer custom_id) {
+		this.custom_id = custom_id;
+	}
+
+	public String getCustom_time() {
+		return custom_time;
+	}
+
+	public void setCustom_time(String custom_time) {
+		this.custom_time = custom_time;
+	}
+
+	public String getUser_name() {
+		return user_name;
+	}
+
+	public void setUser_name(String user_name) {
+		this.user_name = user_name;
+	}
+
+	public String getPassword() {
+		return password;
+	}
+
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public Integer getDept_type() {
+		return dept_type;
+	}
+
+	public void setDept_type(Integer dept_type) {
+		this.dept_type = dept_type;
+	}
+
+	public String getRemarks() {
+		return remarks;
+	}
+
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+
+	public String getRatio() {
+		return ratio;
+	}
+
+	public void setRatio(String ratio) {
+		this.ratio = ratio;
+	}
+
+	public Integer getUser_type() {
+		return user_type;
+	}
+
+	public void setUser_type(Integer user_type) {
+		this.user_type = user_type;
+	}
+	
+}
