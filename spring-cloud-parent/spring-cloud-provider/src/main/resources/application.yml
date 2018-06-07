@@ -2,10 +2,18 @@ server:
   port: 8001    # 端口设置    
   
 mybatis:
+<<<<<<< HEAD
   config-location: classpath:mybatis.cfg.xml    # mybatis总配置文件所在目录
   type-aliases-package: com.svr.bean    		# 所有Entity别名类所在包
   mapper-locations: classpath:mapper/*.xml      # mapper映射文件所在路径                
 
+=======
+  config-location: classpath:mybatis/mybatis.cfg.xml    # mybatis总配置文件所在目录
+  type-aliases-package: com.svr.bean    				# 所有Entity别名类所在包
+  mapper-locations:
+  - classpath:mybatis/mapper/**/*.xml                   # mapper映射文件所在路径
+  
+>>>>>>> 6f4a1cf302d20f3da3a9643ec4dbcadd244426d1
 spring:
   application:
     name: spring-cloud-provider                        # 注册到Eureka 以及对外暴露的微服务名字（重要）              

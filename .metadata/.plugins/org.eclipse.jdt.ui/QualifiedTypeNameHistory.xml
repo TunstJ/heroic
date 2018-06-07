@@ -12,8 +12,11 @@
 <fullyQualifiedTypeName name="javax.crypto.KeyGenerator"/>
 <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 <fullyQualifiedTypeName name="org.apache.shiro.cache.CacheManager"/>
+<<<<<<< HEAD
 <fullyQualifiedTypeName name="tk.mybatis.mapper.common.Mapper"/>
 <fullyQualifiedTypeName name="org.apache.shiro.util.StringUtils"/>
 <fullyQualifiedTypeName name="org.apache.commons.lang.StringUtils"/>
 <fullyQualifiedTypeName name="org.crazycake.shiro.RedisCacheManager"/>
+=======
+>>>>>>> 6f4a1cf302d20f3da3a9643ec4dbcadd244426d1
 </qualifiedTypeNameHistroy>

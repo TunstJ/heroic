@@ -38,8 +38,11 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+<<<<<<< HEAD
 			<item value="C:\Users\heroic\Desktop\ChaoqiIsPrivateLibrary-master\springboot_shiro_redis"/>
 			<item value="C:\Users\heroic\Desktop\ChaoqiIsPrivateLibrary-master"/>
+=======
+>>>>>>> 6f4a1cf302d20f3da3a9643ec4dbcadd244426d1
 			<item value="C:\Users\heroic\Desktop\spring_boot-0.3\mvc"/>
 			<item value="C:\Users\heroic\Desktop\spring_boot-0.3\spring-mvc"/>
 			<item value="C:\Users\heroic\Desktop\springboot-mybatis-master"/>

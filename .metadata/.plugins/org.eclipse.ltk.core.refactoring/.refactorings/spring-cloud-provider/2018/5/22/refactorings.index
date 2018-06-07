@@ -17,5 +17,8 @@
 1527751607722	Rename package 'com.svr.service.impl'
 1527751902935	Rename package 'com.svr.utils'
 1527751923104	Delete element
+<<<<<<< HEAD
 1527754611147	Delete element
 1527755223802	Move file
+=======
+>>>>>>> 6f4a1cf302d20f3da3a9643ec4dbcadd244426d1

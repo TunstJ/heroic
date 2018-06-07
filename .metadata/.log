@@ -3822,6 +3822,7 @@ org.tigris.subversion.subclipse.core.SVNException: 提供的 SVN 信息与磁盘
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
 !SUBENTRY 1 org.tigris.subversion.subclipse.core 4 4 2018-05-31 14:32:59.705
 !MESSAGE 提供的 SVN 信息与磁盘上“springboot_mybatisplus”项目的信息不相匹配。
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.recommenders.rcp 2 15 2018-05-31 16:51:07.178
 !MESSAGE Failed to parse news feed
@@ -3869,3 +3870,5 @@ Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to
 	at sun.security.provider.certpath.SunCertPathBuilder.engineBuild(Unknown Source)
 	at java.security.cert.CertPathBuilder.build(Unknown Source)
 	... 31 more
+=======
+>>>>>>> 6f4a1cf302d20f3da3a9643ec4dbcadd244426d1

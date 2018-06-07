@@ -3,6 +3,8 @@ package com.svr.controller;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 
+import org.springframework.web.bind.annotation.RestController;
+
 //返回视图  返回json格式   使用@RestController注解
 @Controller
 public class DomeController {
